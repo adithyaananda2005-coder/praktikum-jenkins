@@ -30,3 +30,6 @@
        }
      }
    }
+    stage('Deploy App + Database') {
+      steps { bat 'docker compose up -d --build' }
+    }
